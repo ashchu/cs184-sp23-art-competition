@@ -99,9 +99,10 @@
 				<h3>Caption</h3>
 				<p>Low-poly, triangulated bird perched on a tree branch</p> <hr>
 				<h3>How is the artwork created?</h3>
-				<p>"For our art submission, we drew a low-poly, triangulated image of a bird sitting on a tree. While we extracted the initial pixel matrix from an image Google, we used our own script from scratch to procedurally generate it.
+				<p>For our art submission, we drew a low-poly, triangulated image of a bird sitting on a tree. While we extracted the initial pixel matrix from an image Google, we used our own script from scratch to procedurally generate it.
 				<br>
-				First, we identified sample points along defining edges of the picture using Canny edge detection. This method involves smoothing the image using a Gaussian filter, computing the gradient across the image matrix, and determining strong and weak edges by applying a threshold. Next, we applied the Delaunay triangulation algorithm to connect these sample points, forming a multilayered triangle mesh that gives the artwork its characteristic low-poly, triangular appearance. Finally, we had to add the colors to our picture. Each triangle's color was determined by the triangle's ""average"" color in the original image. This allowed us to map each triangle to a single fill, which would keep the drawing smooth and help enhance the overall 3Dness of the picture. To create the actual svg file, we wrote a simple template for a general polygon tag and replicated that for each triangle, filling in the sample points and fill color as necessary."
+				<br>
+				First, we identified sample points along defining edges of the picture using Canny edge detection. This method involves smoothing the image using a Gaussian filter, computing the gradient across the image matrix, and determining strong and weak edges by applying a threshold. Next, we applied the Delaunay triangulation algorithm to connect these sample points, forming a multilayered triangle mesh that gives the artwork its characteristic low-poly, triangular appearance. Finally, we had to add the colors to our picture. Each triangle's color was determined by the triangle's ""average"" color in the original image. This allowed us to map each triangle to a single fill, which would keep the drawing smooth and help enhance the overall 3Dness of the picture. To create the actual svg file, we wrote a simple template for a general polygon tag and replicated that for each triangle, filling in the sample points and fill color as necessary.
 				</p> <hr>
 				<h3>How long did it take?</h3>
 				<p>8-10 hours</p>
@@ -149,10 +150,10 @@
 				<h3>Caption</h3>
 				<p>In the Mood for Triangles</p> <hr>
 				<h3>How is the artwork created?</h3>
-				<p>"I did delaunay triangulation on the edges of the image and sampled the center colors of each triangle to get its color. Wrote some code that converts the triangles to an SVG format and plugged it into the rasterizer. Success!
+				<p>I did delaunay triangulation on the edges of the image and sampled the center colors of each triangle to get its color. Wrote some code that converts the triangles to an SVG format and plugged it into the rasterizer. Success!
 					<br>
 					<br>
-				I also made a version of the whole scene from ""In the Mood for Love"" with this method triangles: <a href="https://vimeo.com/799994353">https://vimeo.com/799994353</a>. Figured it's too long for a gif though."</p> <hr>
+				I also made a version of the whole scene from ""In the Mood for Love"" with this method triangles: <a href="https://vimeo.com/799994353">https://vimeo.com/799994353</a>. Figured it's too long for a gif though.</p> <hr>
 				<h3>How long did it take?</h3>
 				<p>An afternoon of coding, a couple days of playing with the new software! :D</p>
 			</div>
