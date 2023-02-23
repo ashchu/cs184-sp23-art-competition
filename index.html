@@ -1,0 +1,192 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Rancho&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<h1>🎨 COMPSCI 184/284A Project 1 &nbsp;<span class="highlight">Art&nbsp;Competition</span></h1>
+		<p>We've received <b>11 entries</b> from you all in the first project art competition 🔆</p>
+		<p>Please enjoy a gallery of the artworks and then vote for your favorites!</p>
+		<p>When voting, please consider both the artistic quality <strong>and</strong> the creative process taken to achieve the artwork.</p>
+		<p>You can vote at the link here: <a href="https://bit.ly/cs184-sp23-artcomp-voting">https://bit.ly/cs184-sp23-voting</a></p>
+		<div class="artworks">
+		<div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">A</div>
+		<img src="artwork/campanile.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>The beautiful campanile drawn from 36 polygons</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I used svgeditoronline.com to create the basic form of the campanile. However, the SVG it outputted wouldn't render correctly with our rasterizer. So I had to manually convert a lot of the SVG into a form that our rasterizer could parse. While doing so, I also changed the position of some polygons. </p> <hr>
+		<h3>How long did it take?</h3>
+		<p>It took around 2 hours</p>
+		</div>
+		</div>
+
+		<div class="artwork">
+			<div class="artwork-image-container">
+				<div class="artwork-letter">B</div>
+				<img src="artwork/spot.png">
+				</div>
+				<div class="artwork-caption">
+				<h3>Caption</h3>
+				<p>This is Spot, computer graphics's favorite cow mesh model, who we turned into a CS 184 mascot. Spot goes "Moof!" <a href="https://tinyurl.com/cs184-spot">(https://tinyurl.com/cs184-spot)</a></p> <hr>
+				<h3>How is the artwork created?</h3>
+				<p>
+					We brainstormed different common 3D test models used in computer graphics and found that the cow mesh appeared a few times during lecture, as well as in our online searches. We found out that this cow mesh was named Spot (created by Keenan Crane in 2012), so we decided to create a logo for CS 184 using Spot! We designed/painted the logo first in Procreate as a PNG file, then transferred it to Adobe Illustrator, where we created the pixel art using the Rectangular Grid tool and Paint Bucket tool. We decided to go with a pixel art style to mimic the way we assume LCD pixels light up as a square of uniform color in this course. We exported the resulting artwork as an SVG file. After modifying some SVG code for compatibility, we ran it through the rasterizer.
+				</p> <hr>
+				<h3>How long did it take?</h3>
+				<p>6 hours</p>
+			</div>
+		</div>
+
+		<div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">C</div>
+		<img src="artwork/oski.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Go Bears :)</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I coded polygons to create the basic shapes and I also used scale and translate methods to duplicate some parts and use them repetitively. </p> <hr>
+		<h3>How long did it take?</h3>
+		<p>Around 7 hours </p>
+		</div>
+		</div>
+		</div>
+		</div>
+
+		<div class="artwork">
+			<div class="artwork-image-container">
+				<div class="artwork-letter">D</div>
+				<img src="artwork/manhorse.png">
+				</div>
+				<div class="artwork-caption">
+				<h3>Caption</h3>
+				<p>man horse</p> <hr>
+				<h3>How is the artwork created?</h3>
+				<p>The man from task 3 transformed into a sad horse. This art piece represents how people and animals are not too different after all and only involves a few transformations. First, the torso was stretched out with a scale. Then, his head was transformed to be atomically correct to a horse. The man’s legs were split into two so each leg is not two legs on a horse. This involved a couple of transformations, color changes, and scale changes. Afterward, the left arm was turned into a tail, and the right arm was turned into a post that the horse is staring at. This involved rotating, scaling, and translating to the proper positions. Finally, some features were rearranged to give proper perspective.</p> <hr>
+				<h3>How long did it take?</h3>
+				<p>1 Hour</p>
+			</div>
+		</div>
+
+		<div class="artwork">
+			<div class="artwork-image-container">
+				<div class="artwork-letter">E</div>
+				<img src="artwork/colorrobo.png">
+				</div>
+				<div class="artwork-caption">
+				<h3>Caption</h3>
+				<p>This is a zany, colorful wizard that just succeeded in a life-changing, magical experiment that will better the lives of everyone in the world.</p> <hr>
+				<h3>How is the artwork created?</h3>
+				<p>We took inspiration from the robot and changed the color of shapes, performed some transformations and rotations in order to get the arms/legs to be in a more excited form and where we wanted them to be, and created the hat using additional transformations and rotations.</p> <hr>
+				<h3>How long did it take?</h3>
+				<p>10 minutes</p>
+			</div>
+		</div>
+
+
+		<div class="artwork">
+			<div class="artwork-image-container">
+				<div class="artwork-letter">F</div>
+				<img src="artwork/birdtri.png">
+				</div>
+				<div class="artwork-caption">
+				<h3>Caption</h3>
+				<p>Low-poly, triangulated bird perched on a tree branch</p> <hr>
+				<h3>How is the artwork created?</h3>
+				<p>"For our art submission, we drew a low-poly, triangulated image of a bird sitting on a tree. While we extracted the initial pixel matrix from an image Google, we used our own script from scratch to procedurally generate it.
+				<br>
+				First, we identified sample points along defining edges of the picture using Canny edge detection. This method involves smoothing the image using a Gaussian filter, computing the gradient across the image matrix, and determining strong and weak edges by applying a threshold. Next, we applied the Delaunay triangulation algorithm to connect these sample points, forming a multilayered triangle mesh that gives the artwork its characteristic low-poly, triangular appearance. Finally, we had to add the colors to our picture. Each triangle's color was determined by the triangle's ""average"" color in the original image. This allowed us to map each triangle to a single fill, which would keep the drawing smooth and help enhance the overall 3Dness of the picture. To create the actual svg file, we wrote a simple template for a general polygon tag and replicated that for each triangle, filling in the sample points and fill color as necessary."
+				</p> <hr>
+				<h3>How long did it take?</h3>
+				<p>8-10 hours</p>
+			</div>
+		</div>
+
+
+		<div class="artwork">
+			<div class="artwork-image-container">
+				<div class="artwork-letter">G</div>
+				<img src="artwork/svg.png">
+				</div>
+				<div class="artwork-caption">
+				<h3>Caption</h3>
+				<p>svg art of an artist being drawn as svg art... wait, let's start that again.</p> <hr>
+				<h3>How is the artwork created?</h3>
+				<p>Figma SVG pencil tool + shapes</p> <hr>
+				<h3>How long did it take?</h3>
+				<p>20 minutes</p>
+			</div>
+		</div>
+
+
+		<div class="artwork">
+			<div class="artwork-image-container">
+				<div class="artwork-letter">H</div>
+				<img src="artwork/impressionism.png">
+				</div>
+				<div class="artwork-caption">
+				<h3>Caption</h3>
+				<p>my impression on impressionism.</p> <hr>
+				<h3>How is the artwork created?</h3>
+				<p>I first triangularized two paintings by Monet, then I loaded them to our rasterizer, after that I copied the code of one of the svg file and paste it to the other, and deleted some of the polygons so that two images could blend together well.</p> <hr>
+				<h3>How long did it take?</h3>
+				<p>3 hours</p>
+			</div>
+		</div>
+
+		<div class="artwork">
+			<div class="artwork-image-container">
+				<div class="artwork-letter">I</div>
+				<img src="artwork/inthemood.png">
+				</div>
+				<div class="artwork-caption">
+				<h3>Caption</h3>
+				<p>In the Mood for Triangles</p> <hr>
+				<h3>How is the artwork created?</h3>
+				<p>"I did delaunay triangulation on the edges of the image and sampled the center colors of each triangle to get its color. Wrote some code that converts the triangles to an SVG format and plugged it into the rasterizer. Success!
+					<br>
+					<br>
+				I also made a version of the whole scene from ""In the Mood for Love"" with this method triangles: <a href="https://vimeo.com/799994353">https://vimeo.com/799994353</a>. Figured it's too long for a gif though."</p> <hr>
+				<h3>How long did it take?</h3>
+				<p>An afternoon of coding, a couple days of playing with the new software! :D</p>
+			</div>
+		</div>
+
+
+		<div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">J</div>
+		<img src="artwork/tpose.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>This is tree pose guy. He do tree pose.</p><hr>
+		<h3>How is the artwork created?</h3>
+		<p>We had to modify the rotation of both arms and the left leg as well as scale some of the body parts up in length.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>1 hour</p>
+		</div>
+		</div>
+
+		<div class="artwork">
+			<div class="artwork-image-container">
+				<div class="artwork-letter">K</div>
+				<img src="artwork/squirtle.png">
+				</div>
+				<div class="artwork-caption">
+				<h3>Caption</h3>
+				<p>Squirtle with twice the swag</p> <hr>
+				<h3>How is the artwork created?</h3>
+				<p>Purely using Python and the C++ code. I used a Python script to try to determine where in the png it's dark enough near enough to the location of the sunglasses. I also wrote a Python script to create the 16000 line svg. Unfortunately, the colors are inconsistent given that the glasses are white from the sunlight in some locations, making some of the sunglasses unfortunately get filtered out.</p> <hr>
+				<h3>How long did it take?</h3>
+				<p>4 hours?</p>
+			</div>
+		</div>
+	</body>
+</html>
