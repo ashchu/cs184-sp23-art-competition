@@ -1,0 +1,15 @@
+.titlepage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.resource {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 3.6;
+    margin: 20px 10px 40px 20px;
+    color: blue;
+}
+a {
+    text-decoration: none;
+  }
+</style>
