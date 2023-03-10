@@ -12,4 +12,17 @@
 a {
     text-decoration: none;
   }
-</style>
+
+a:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/10571/32/minimal-ow-pointer.png) , pointer;
+
+}
+
+#phi:hover {
+  content:url("artwork/p2/phishark.jpeg");
+}
+
+
+#tot:hover {
+  content:url("artwork/p2/totorobw.png");
+}
